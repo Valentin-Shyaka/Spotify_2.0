@@ -23,13 +23,14 @@
     width: 300px;
         margin-left: 1200px;
         margin-top: -1580px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 
  }
 .navigators{
     color: rgb(219, 200, 200);
     font-size: 1.2em;
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 10px;
     display: block;
     height: 300px;
@@ -66,7 +67,7 @@
     margin-top: 30px;
     width: 40px;
     font-size: 1.2em;
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
     color: white;
     
@@ -135,12 +136,14 @@
     margin-left: 500px;
 }
 #up{
+    font-size: 0.8em;
+    font-weight: bolder;
     width: 120px;
-    height: 30px;
-    border-radius: 15px;
-    background-color: rgba(77, 73, 73, 0.452);
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    border: solid springgreen;
+    border: 1px solid rgb(170, 168, 168);
     margin-left: 10px;
 
 }
@@ -189,6 +192,9 @@
     
     
 }
+#new>.play{
+    opacity: 0;
+}
 #img{
     height: 100%;
     width:80px ;
@@ -198,14 +204,14 @@
 #gh{
     margin-top: 30px;
     font-size: 1.2em;
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     
 }
 #go{
     margin-left: 50px;
     font-size: 1.8em;
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 20px;
 
 }
@@ -284,27 +290,28 @@ h4{
     margin-top: 20px;
     margin-left: 40px;
     font-size: 1.2em;
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 p{
     margin-left: 20px;
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #you{
     margin-left: 50px;
     font-size: 1.8em;
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 20px;
     
 }
 #act{
     margin-left: 30px;
     font-size: 1.4em;
-    font-family: sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 20px;
 
 }
 .text{
+    margin-left:-10px;
     font-size: 1em;
 
 }
@@ -314,8 +321,8 @@ p{
 }
 #j{
     height: 60px;
-    margin-left: 30px;
-    background-color: rgb(44, 43, 43);
+    margin-left: 10px;
+    background-color: rgb(19, 18, 18);
     margin-top: 20px;
     border-radius: 20px;
     width: 260px;
@@ -397,6 +404,7 @@ p{
 #up:hover{
     transform: scale(1.1);
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .mkd:hover{
@@ -409,7 +417,7 @@ p{
 
 }
 .mkd:hover>.play{
-    display: block;
+    opacity: 1;
 }
 .play{
     width: 40px;
@@ -417,7 +425,7 @@ p{
     border-radius: 50%;
     background-color: rgb(24, 255, 24);
     margin-left: 190px;
-    display: none;
+    opacity: 0;
     align-items: center;
     position: absolute;
     box-shadow: 2px 4px 4px 2px rgb(19, 18, 18);
@@ -433,7 +441,7 @@ p{
     border-radius: 50%;
     background-color: rgb(24, 255, 24);
     margin-left: 140px;
-    display: none;
+    opacity: 0;
     align-items: center;
     position: absolute;
     box-shadow: 2px 4px 4px 2px rgb(19, 18, 18);
@@ -449,7 +457,7 @@ p{
     cursor: pointer;
 }
 #new:hover>.play{
-display: block;
+opacity: 1;
 margin-right: 5px;
 margin-top: 10px;
 cursor: pointer;
