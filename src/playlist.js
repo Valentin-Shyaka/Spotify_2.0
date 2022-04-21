@@ -1,9 +1,11 @@
 import { AccessAlarmRounded, ArrowDownwardOutlined, ArrowDownwardRounded, ArrowDropDownCircleOutlined, ArrowDropDownRounded, ArrowDropDownSharp, FavoriteOutlined, Pause, PauseCircleFilledRounded, PlayArrow, SearchRounded } from '@material-ui/icons'
 import React from 'react'
 import "./playlist.css"
+
 import {useEffect,useState} from 'react'
 import  ArrowUP  from "@material-ui/icons/ArrowBackIosRounded";
 import ArrowDown from "@material-ui/icons/ArrowForwardIosRounded"
+import Layout from './Layout';
 
 
 function Played(number,plc,song,artist,album,days,duration,url){
@@ -58,7 +60,8 @@ function Played(number,plc,song,artist,album,days,duration,url){
 function Playlist() {
   return (
     
-        <div className='playlist'>
+    <Layout>
+                <div className='playlist'>
             <div className='space'>
 
             </div>
@@ -113,20 +116,16 @@ function Playlist() {
                 {Played(3,'amashu.jpg','Amashu','Chriss Eazy','Fasta',2,'04:07','https://timheven.com/uploads/Chriss%20Eazy%20-%20AMASHU%20(Prod.%20Element).mp3')}
                 {Played(4,'6kg.jpg','Monica','Juno Kizigenza','6KG',3,'03:21','https://timheven.com/uploads/Juno%20Kizigenza%20-%20Monica%20(Prod.%20Holybeat%20Murda).mp3')}
                 {Played(5,'kuntsutsu.jpg','Kuntsutsu','Papa Cyangwe','Icyangwe',4,'03:51','https://timheven.com/uploads/Papa%20Cyangwe%20-%20Kuntsutsu%20Ft%20Juno%20kizigenza%20(Prod.%20Element).mp3')}
+               
             
             </div>
            
             
         </div>
-        
-    
-
-
-
-
+    </Layout>
 
     
   )
 }
 
-export default Playlist
+export default Playlist;

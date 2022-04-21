@@ -1,6 +1,6 @@
 import { AccessAlarmRounded, ArrowDownwardOutlined, ArrowDownwardRounded, ArrowDropDownCircleOutlined, ArrowDropDownRounded, ArrowDropDownSharp, FavoriteOutlined, Pause, PauseCircleFilledRounded, PlayArrow, SearchRounded } from '@material-ui/icons'
 import React from 'react'
-
+import Layout from './Layout'
 import "./usmusic.css"
 import {useEffect,useState} from 'react'
 import  ArrowUP  from "@material-ui/icons/ArrowBackIosRounded";
@@ -59,7 +59,8 @@ function Played(number,plc,song,artist,album,days,duration,url){
 
 function Usmusic() {
   return (
-    
+    <Layout>
+        
         <div className='usmusic'>
             <div className='space'>
 
@@ -126,6 +127,7 @@ function Usmusic() {
 
 
 
+    </Layout>
 
     
   )

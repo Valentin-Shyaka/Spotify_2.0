@@ -1,6 +1,6 @@
 import { AccessAlarmRounded, ArrowDownwardOutlined, ArrowDownwardRounded, ArrowDropDownCircleOutlined, ArrowDropDownRounded, ArrowDropDownSharp, FavoriteOutlined, Pause, PauseCircleFilledRounded, PlayArrow, SearchRounded } from '@material-ui/icons'
 import React from 'react'
-
+import Layout from './Layout'
 import "./afro.css"
 import {useEffect,useState} from 'react'
 import  ArrowUP  from "@material-ui/icons/ArrowBackIosRounded";
@@ -60,7 +60,8 @@ function Played(number,plc,song,artist,album,days,duration,url){
 function Afrobeats () {
   return (
     
-        <div className='afrobeats'>
+       <Layout>
+            <div className='afrobeats'>
             <div className='space'>
 
             </div>
@@ -103,7 +104,7 @@ function Afrobeats () {
                 </div>
                 <div className='headers'>
                     <span><strong>#</strong> TITLE</span>
-                    <span id='span'>ALBUM</span>
+                    <span id='span' className='albums'>ALBUM</span>
                     <span id='span'>DATE ADDED</span>
                     <span id='span'><AccessAlarmRounded/></span>
 
@@ -124,6 +125,7 @@ function Afrobeats () {
     
 
 
+       </Layout>
 
 
 

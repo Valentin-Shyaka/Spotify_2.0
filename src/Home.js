@@ -3,6 +3,10 @@ import  ArrowUP  from "@material-ui/icons/ArrowBackIosRounded";
 import ArrowDown from "@material-ui/icons/ArrowForwardIosRounded"
 import PlayArrow from "@material-ui/icons/PlayArrow";
 import  { useState, useEffect } from "react";
+import Layout from "./Layout";
+import "./home.css"
+import {useContext} from "react"
+import {Appcontext} from "./App"
 
 
 
@@ -10,6 +14,7 @@ import  { useState, useEffect } from "react";
 
 
 function Playlists(image,list){
+    
     return(
         <div>
             <div id="new">
@@ -51,6 +56,7 @@ function Empty(){
 
 
 
+
 const useAudio = url => {
   const [audio] = useState(new Audio("https://cdn.trendybeatz.com/audio/Ckay-Emiliana-(TrendyBeatz.com).mp3"));
   const [playing, setPlaying] = useState(false);
@@ -87,9 +93,11 @@ const Player = ({ url }) => {
 
 function Home(){
 
-
+    const {username}=useContext(Appcontext)
+    
     return(
-        <div>
+<Layout>
+<div>
                 <div className="home">
                 <div>
 
@@ -104,7 +112,7 @@ function Home(){
                     </div>
                     <div class="user">
                         <input type="button" value="Upgrade" id="up"/>
-                        <input type="button" value="vava_lantern" id="up"/>
+                        <input type="button" value={username} id="up"/>
             
             
                     </div>
@@ -126,7 +134,7 @@ function Home(){
                         {Playlists('ckay.jpg','C-Kay Hits')}
                     </div>
                     <div className="new">
-                        {Playlists('rdhit.jpg','Rwandan Hits')}
+                        {Playlists('kivu.jpg','Rwandan Hits')}
                         {Playlists('latino.png','Latino Hits')}
                     </div>
 
@@ -135,7 +143,7 @@ function Home(){
                 <div className="madefor">
                     {Suggestions('lil.jpg','Daily mix 1','Lil Nas X,Rema and others','koh')}
                     {Suggestions('bad.jpg','Daily mix 2','DaBaby,Roddy Rich and others','koh1')}
-                    {Suggestions('arizona.jpg','Daily mix 3','Arizona Zervas,Mustard and others','koh2')}
+                    {Suggestions('arizona.jpg','Daily mix 3','Arizona,Mustard and others','koh2')}
                     {Suggestions('pop.jpg','Daily mix 4','Pop Smoke,50 Cent and others','koh3')}
                     
                    
@@ -161,6 +169,7 @@ function Home(){
 
             </div>
         </div>
+</Layout>
 
     );
 }

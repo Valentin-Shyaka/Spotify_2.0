@@ -1,81 +1,9 @@
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.lfloaters{
-    background-color: black;
-    color: white;
 
-    height: 100%;
-    position: fixed;
-    display: inline-block;
-    width: 20%;
-}
-#rfloaters{
-    background-color: black;
-    color: white;
-     float: right;
-    height: 100%;
-     position: fixed; 
-    display: inline-block;
-    width: 20%;
-        margin-left: 80%;
-        margin-top: -1480px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-
- }
-.navigators{
-    color: rgb(219, 200, 200);
-    font-size: 1.2em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-left: 10px;
-    display: block;
-    height: 300px;
-
-
-
-
-}
-#hr{
-    width: 200px;
-    margin-right: 30px;
-    margin-left:30px ;
-}
-#a{
-    color: white;
-    display: flex;
-    margin-top: 15px;
-    margin-left: 20px;
-    font-size: 0.9em;
-    
-    
-}
-#a>#icn{
-    color: white;
-}
-.lists{
-    margin-left: 40px;
-    margin-top: 40px;
-    font-size: 0.8em;
-
-
-}
-#muse{
-    margin-top: 30px;
-    width: 40px;
-    font-size: 1.2em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-decoration: none;
-    color: white;
-    
-}
-#fas{
-    margin-left: 20px;
-    
-}
 
 
 .home{
@@ -83,7 +11,7 @@
     background:linear-gradient(to bottom,rgb(11, 11, 143),black,black);
     color: white;
     margin-right: 0px;
-    width:65%;
+    width:61%;
     position:relative;
     height: 1580px;
 
@@ -484,3 +412,18 @@ transition: all 0.5s ease;
     background-color:rgb(51, 46, 46) 
 
 }
+#rfloaters{
+    background-color: black;
+    color: white;
+     
+    height: 100%;
+     position: fixed; 
+    display: inline-block;
+    width: 20%;
+        margin-left: 80%;
+        margin-top: -1580px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        z-index: -1;
+
+
+ }

@@ -16,12 +16,13 @@ function Lfloaters(){
             <div className="lfloaters">
                 <div><MoreHorizRounded className="more"/></div>
                 <div className="navigators">
-                    <Link to={'/'}>
+                    <Link to={'/home'}>
                 <p id="a"><House id="icn"/>Home</p>
                     </Link>
                     <p id="a"><Search id="icn"/>Search</p>
-            
+                       
                     <p id="a"><Class id="icn"/>Library</p>
+                    
                     <br/>
                     <p id="a"><PlaylistPlay id="icn"/>Create playlist</p>
                     <p id="a"><Favorite id="icn"/>Liked Songs</p>
